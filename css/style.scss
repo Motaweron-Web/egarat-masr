@@ -1,0 +1,292 @@
+$mainColor: #145e4e;
+$secondColor: #f5f4de;
+$gold: #ffd700;
+$white-color: #ffffff;
+$black-color: #292929;
+$transition: all 0.3s ease-in-out;
+$shadow: 0px 2px 4px #00000030;
+$BigShadow: 0px 8px 24px #00000030;
+
+@font-face {
+  font-family: montserrat;
+  font-display: swap;
+  src: url(../webfonts/montserrat-Arabic-Regular.woff);
+}
+
+* {
+  font-family: "montserrat";
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  direction: rtl;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 6px;
+  // background-color: #eee;
+  border-radius: 0px !important;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 0px !important;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #999;
+  outline: none;
+  border-radius: 20px !important;
+}
+
+a {
+  text-decoration: none;
+  transition: $transition;
+}
+
+a:hover {
+  text-decoration: none;
+  color: $mainColor;
+}
+
+button:focus {
+  outline: 0;
+}
+
+.row {
+  margin: 0px;
+}
+
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+@media (max-width: 767px) {
+
+  .container,
+  .container-fluid {
+    padding: 0px 8px;
+  }
+}
+
+video,
+img {
+  max-width: 100%;
+  height: auto;
+  display: inline-block;
+}
+
+.navbar-toggler {
+  border: none;
+  box-shadow: none !important;
+}
+
+.btn:focus {
+  box-shadow: none;
+}
+
+body {
+  background-color: #fdfdfd;
+}
+
+content {
+  min-height: 50vh;
+  position: relative;
+  display: block;
+}
+
+
+
+.select2-container--default .select2-selection--single {
+  min-height: 48px;
+  display: flex;
+  align-items: center;
+  border-color: $mainColor;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+  left: 1px;
+  right: unset;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+span.select2.select2-container.select2-container--default {
+  width: 100% !important;
+}
+
+.select2-results__option--selectable {
+  border-radius: 4px;
+  margin-bottom: 2px;
+}
+
+.select2-container--default .select2-results__option--highlighted.select2-results__option--selectable {
+  background-color: $secondColor  !important;
+  color: $mainColor  !important;
+}
+
+.select2-dropdown {
+  border-radius: 4px;
+  box-shadow: $BigShadow  !important;
+  border-color: transparent;
+}
+
+.select2-container .select2-selection--single .select2-selection__rendered {
+  padding: 10px 20px;
+}
+
+// .select2-container {
+//   z-index: 1060;
+// }
+
+/////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////
+
+
+// //////////////////////////////////////////==================
+// //////////////////////////////////////////==================
+// //////////////////////////////////////////==================
+// //////////////////////////////////////////==================
+// //////////////////////////////////////////==================
+// //////////////////////////////////////////==================
+// //////////////////////////////////////////==================
+// //////////////////////////////////////////==================
+// //////////////////////////////////////////==================
+// //////////////////////////////////////////==================
+// //////////////////////////////////////////==================
+// //////////////////////////////////////////==================
+// //////////////////////////////////////////==================
+// //////////////////////////////////////////==================
+// //////////////////////////////////////////==================
+// //////////////////////////////////////////==================
+// //////////////////////////////////////////==================
+// //////////////////////////////////////////==================
+// //////////////////////////////////////////==================
+// //////////////////////////////////////////==================
+// //////////////////////////////////////////==================
+// //////////////////////////////////////////==================
+// //////////////////////////////////////////==================
+@media (min-width: 992px) {
+
+  /* Global */
+  h1 {
+    font-size: 28px !important;
+  }
+
+  h2 {
+    font-size: 24px !important;
+  }
+
+  h3 {
+    font-size: 20px !important;
+  }
+
+  h4 {
+    font-size: 18px !important;
+  }
+
+  h5 {
+    font-size: 16px !important;
+  }
+
+  h6 {
+    font-size: 14px !important;
+  }
+
+  a,
+  p {
+    font-size: 13px !important;
+  }
+}
+
+/* Tablet device :768px. */
+@media (min-width: 768px) and (max-width: 991px) {
+
+  /* Global */
+  body {
+    font-size: 14px !important;
+  }
+
+  h1 {
+    font-size: 26px !important;
+  }
+
+  h2 {
+    font-size: 22px !important;
+  }
+
+  h3 {
+    font-size: 20px !important;
+  }
+
+  h4 {
+    font-size: 18px !important;
+  }
+
+  h5 {
+    font-size: 16px !important;
+  }
+
+  h6 {
+    font-size: 15px !important;
+  }
+
+  a,
+  p {
+    font-size: 14px !important;
+  }
+}
+
+/* small mobile :320px. */
+@media (max-width: 767px) {
+
+  /* Global */
+  body {
+    font-size: 12px !important;
+  }
+
+  h1 {
+    font-size: 22px !important;
+  }
+
+  h2 {
+    font-size: 18px !important;
+  }
+
+  h3 {
+    font-size: 17px !important;
+  }
+
+  h4 {
+    font-size: 16px !important;
+  }
+
+  h5 {
+    font-size: 15px !important;
+  }
+
+  h6 {
+    font-size: 14px !important;
+  }
+
+  a,
+  p {
+    font-size: 13px !important;
+  }
+}
