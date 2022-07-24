@@ -1,5 +1,5 @@
 $mainColor: #030470;
-$secondColor: #D9B026;
+$secondColor: #d9b026;
 $gold: #ffd700;
 $white-color: #ffffff;
 $black-color: #292929;
@@ -70,7 +70,6 @@ p {
 }
 
 @media (max-width: 767px) {
-
   .container,
   .container-fluid {
     padding: 0px 8px;
@@ -108,11 +107,11 @@ content {
   display: flex;
   align-items: center;
   border-color: #ced4da;
-  
-
 }
 
-.select2-container--default .select2-selection--single .select2-selection__arrow {
+.select2-container--default
+  .select2-selection--single
+  .select2-selection__arrow {
   left: 1px;
   right: unset;
   top: 50%;
@@ -129,14 +128,15 @@ span.select2.select2-container.select2-container--default {
   transition: $transition;
 }
 
-.select2-container--default .select2-results__option--highlighted.select2-results__option--selectable {
-  background-color: $mainColor  !important;
-  color: $white-color  !important;
+.select2-container--default
+  .select2-results__option--highlighted.select2-results__option--selectable {
+  background-color: $mainColor !important;
+  color: $white-color !important;
 }
 
 .select2-dropdown {
   border-radius: 4px;
-  box-shadow: $BigShadow  !important;
+  box-shadow: $BigShadow !important;
   border-color: transparent;
 }
 
@@ -152,7 +152,6 @@ span.select2.select2-container.select2-container--default {
   min-height: 48px;
   box-shadow: none !important;
   color: #777;
-
 }
 
 .container {
@@ -161,7 +160,6 @@ span.select2.select2-container.select2-container--default {
 
 .container-fluid {
   max-width: 1560px;
-
 }
 
 /////////////////////////////////////////////////////////////////////////////////////////
@@ -193,7 +191,7 @@ span.select2.select2-container.select2-container--default {
 
     img {
       height: 50px;
-      transition: .5s ease;
+      transition: 0.5s ease;
       width: 100%;
       object-fit: contain;
 
@@ -218,7 +216,7 @@ span.select2.select2-container.select2-container--default {
     }
 
     &:hover {
-      color: $mainColor  !important;
+      color: $mainColor !important;
     }
   }
 
@@ -228,7 +226,7 @@ span.select2.select2-container.select2-container--default {
     height: 24px;
     padding: 5px;
     cursor: pointer;
-    transition: transform .3s;
+    transition: transform 0.3s;
     z-index: 2;
 
     span {
@@ -238,7 +236,7 @@ span.select2.select2-container.select2-container--default {
       height: 2px;
       background-color: $mainColor;
       margin: 4px 0;
-      transition: width .3s, transform .5s, opacity .3s;
+      transition: width 0.3s, transform 0.5s, opacity 0.3s;
 
       &:first-child {
         top: 0;
@@ -342,7 +340,7 @@ span.select2.select2-container.select2-container--default {
         }
 
         &:first-of-type,
-        &:not(.visible)+.visible {
+        &:not(.visible) + .visible {
           margin-top: auto;
         }
       }
@@ -401,7 +399,8 @@ span.select2.select2-container.select2-container--default {
 }
 
 .mainSection {
-  background: linear-gradient(#0305708e, #00000033), url(../img/home.webp) no-repeat center top;
+  background: linear-gradient(#0305708e, #00000033),
+    url(../img/home.webp) no-repeat center top;
   background-attachment: fixed;
   min-height: 100vh;
   padding: 100px 10px;
@@ -431,13 +430,13 @@ span.select2.select2-container.select2-container--default {
       display: inline-block;
       z-index: 2;
 
-      span{
+      span {
         font-weight: bold;
         font-size: larger;
         color: $gold;
       }
-      &::before{
-        content: '';
+      &::before {
+        content: "";
         position: absolute;
         right: -10px;
         top: 0;
@@ -448,24 +447,23 @@ span.select2.select2-container.select2-container--default {
         z-index: -1;
         animation: swipe 10s infinite;
         @keyframes swipe {
-          0%{
+          0% {
             width: 80%;
           }
-          20%{
+          20% {
             width: 50%;
           }
-          40%{
+          40% {
             width: 90%;
           }
-          60%{
+          60% {
             width: 70%;
           }
-          80%{
+          80% {
             width: 40%;
           }
         }
       }
-
     }
 
     .search {
@@ -507,10 +505,51 @@ span.select2.select2-container.select2-container--default {
           color: $mainColor;
         }
       }
-
     }
+  }
+}
+
+.SectionTitle {
+  text-align: center;
+  position: relative;
+  padding: 30px 10px;
+  &::before {
+    content: "";
+    width: 200px;
+    height: 2px;
+    background-color: $mainColor;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+  }
+  &::after {
+    content: "";
+    width: 15px;
+    height: 15px;
+    background-color: $gold;
+    border: 2px solid $mainColor;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%) translateY(-50%) rotate(45deg);
+  }
+  .hint{
+    color: #777;
+    margin: auto;
+    max-width: 600px;
 
   }
+  .title{
+    font-weight: bold;
+    color: $mainColor;
+    margin-bottom: 20px ;
+  }
+
+}
+
+.bestOffers {
+  padding: 70px 0;
 }
 
 // //////////////////////////////////////////==================
@@ -537,10 +576,8 @@ span.select2.select2-container.select2-container--default {
 // //////////////////////////////////////////==================
 // //////////////////////////////////////////==================
 
-
 /* Tablet device :768px. */
 @media (min-width: 768px) and (max-width: 991px) {
-
   /* Global */
   body {
     font-size: 14px !important;
@@ -578,7 +615,6 @@ span.select2.select2-container.select2-container--default {
 
 /* small mobile :320px. */
 @media (max-width: 767px) {
-
   /* Global */
   body {
     font-size: 12px !important;

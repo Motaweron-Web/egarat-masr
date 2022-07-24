@@ -456,6 +456,47 @@ span.select2.select2-container.select2-container--default {
   color: #030470;
 }
 
+.SectionTitle {
+  text-align: center;
+  position: relative;
+  padding: 30px 10px;
+}
+.SectionTitle::before {
+  content: "";
+  width: 200px;
+  height: 2px;
+  background-color: #030470;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+}
+.SectionTitle::after {
+  content: "";
+  width: 15px;
+  height: 15px;
+  background-color: #ffd700;
+  border: 2px solid #030470;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%) translateY(-50%) rotate(45deg);
+}
+.SectionTitle .hint {
+  color: #777;
+  margin: auto;
+  max-width: 600px;
+}
+.SectionTitle .title {
+  font-weight: bold;
+  color: #030470;
+  margin-bottom: 20px;
+}
+
+.bestOffers {
+  padding: 70px 0;
+}
+
 /* Tablet device :768px. */
 @media (min-width: 768px) and (max-width: 991px) {
   /* Global */
