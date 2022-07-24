@@ -24,7 +24,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #999;
+  background-color: #383a9c;
   outline: none;
   border-radius: 20px !important;
 }
@@ -339,7 +339,7 @@ span.select2.select2-container.select2-container--default {
 }
 
 .mainSection {
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/home.jpg) no-repeat center top;
+  background: linear-gradient(rgba(3, 5, 112, 0.5568627451), rgba(0, 0, 0, 0.2)), url(../img/9.jpg) no-repeat center top;
   background-attachment: fixed;
   min-height: 100vh;
   padding: 100px 10px;
