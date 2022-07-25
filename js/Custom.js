@@ -16,12 +16,17 @@ $(document).ready(function () {
   });
   var swiper = new Swiper(".offerSlider", {
     slidesPerView: 1,
-    spaceBetween: 10,
+    spaceBetween: 0,
     loop: true,
     navigation: {
       nextEl: ".offerNext",
       prevEl: ".offerPrev",
     },
+    pagination: {
+      el: ".offerPagination",
+      dynamicBullets: true,
+    },
+    speed:1000,
     autoplay: {
       delay: 2500,
       disableOnInteraction: false,
@@ -37,7 +42,7 @@ $(document).ready(function () {
         slidesPerView: 3,
       },
       1024: {
-        slidesPerView: 4,
+        slidesPerView: 3,
       },
     },
   });
