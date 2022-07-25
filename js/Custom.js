@@ -26,7 +26,7 @@ $(document).ready(function () {
       el: ".offerPagination",
       dynamicBullets: true,
     },
-    speed:1000,
+    speed:1500,
     autoplay: {
       delay: 2500,
       disableOnInteraction: false,
