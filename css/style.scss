@@ -609,12 +609,18 @@ span.select2.select2-container.select2-container--default {
 
     .location {
       display: flex;
-      font-size: 14px;
       align-items: center;
       color: #777;
       margin-bottom: 8px;
       i {
         margin-left: 5px;
+      }
+      p{
+        font-size: 12px;
+        @media (max-width:768px) {
+          font-size: 10px !important;
+        }
+
       }
     }
     .adName {

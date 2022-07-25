@@ -643,13 +643,20 @@ span.select2.select2-container.select2-container--default {
 }
 .unit .unitBody .location {
   display: flex;
-  font-size: 14px;
   align-items: center;
   color: #777;
   margin-bottom: 8px;
 }
 .unit .unitBody .location i {
   margin-left: 5px;
+}
+.unit .unitBody .location p {
+  font-size: 12px;
+}
+@media (max-width: 768px) {
+  .unit .unitBody .location p {
+    font-size: 10px !important;
+  }
 }
 .unit .unitBody .adName {
   color: #030470;
