@@ -821,7 +821,7 @@ span.select2.select2-container.select2-container--default {
 }
 
 .footer {
-  background-color: #f5f4f8;
+  background-color: #EFEFF7;
   background-size: cover;
   padding: 20px 0;
   position: relative;
@@ -879,6 +879,11 @@ span.select2.select2-container.select2-container--default {
   margin-bottom: 5px;
   display: block;
   padding: 5px;
+}
+@media (max-width: 578px) {
+  .footer .Links ul li {
+    display: inline-block;
+  }
 }
 .footer .Links ul li a {
   color: #454056;
