@@ -713,20 +713,18 @@ span.select2.select2-container.select2-container--default {
         z-index: 2;
         bottom: 10px;
         right: 10px;
-        
+
         .name {
           font-weight: bold;
           margin-bottom: 10px;
           font-size: 20px;
           color: $white-color;
           transition: $transition;
-
         }
         p {
           font-size: small;
           color: #cccccc;
           transition: $transition;
-
         }
       }
       &:first-child {
@@ -741,14 +739,14 @@ span.select2.select2-container.select2-container--default {
         }
       }
 
-      &:hover{
+      &:hover {
         // box-shadow: $BigShadow;
         z-index: 2;
         .info {
-          .name{
+          .name {
             color: $secondColor;
           }
-          p{
+          p {
             color: $white-color;
           }
         }
@@ -767,6 +765,220 @@ span.select2.select2-container.select2-container--default {
     }
   }
 }
+
+.socialIcons {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 36px;
+    height: 36px;
+    background-color: #ffffff;
+    border-radius: 100px;
+    margin: 2px;
+    color: #666276;
+    transition: $transition;
+
+    &:hover {
+      background-color: $secondColor;
+      color: $white-color;
+      transform: translateY(-3px);
+    }
+  }
+}
+
+.footer {
+  background-color: #f5f4f8;
+  background-size: cover;
+  padding: 20px 0;
+  position: relative;
+  z-index: 2;
+
+  .logo {
+    height: 80px;
+    width: 100%;
+    object-fit: contain;
+    margin-bottom: 10px;
+    object-position: right;
+  }
+
+  .info {
+    color: #666276;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    font-size: 14px;
+    line-height: 30px;
+  }
+
+  .head {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #1f1b2d;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      width: 50%;
+      height: 2px;
+      background-color: $white-color;
+      border-radius: 100px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      right: 0;
+      bottom: -4px;
+      width: 10px;
+      height: 10px;
+      border-radius: 100px;
+      background-color: $white-color;
+    }
+  }
+
+  .Links {
+    ul {
+      // list-style: none;
+      padding: 0;
+      margin: 0;
+
+      li {
+        margin-bottom: 5px;
+        display: block;
+        // min-width: 49%;
+        padding: 5px;
+
+        a {
+          color: #454056;
+
+          &:hover {
+            color: $secondColor;
+          }
+        }
+      }
+    }
+
+    .more {
+      padding: 5px;
+      display: flex;
+      margin-bottom: 5px;
+
+      p {
+        color: $white-color;
+        white-space: nowrap;
+        margin-left: 10px;
+      }
+
+      a {
+        color: $secondColor;
+        margin-left: 10px;
+
+        &:last-child {
+          margin-left: 0px;
+        }
+
+        &:hover {
+          color: $white-color;
+        }
+      }
+    }
+  }
+
+  .Copyright {
+    padding: 20px 20px 0;
+    border-top: 1px solid $black-color;
+    text-align: center;
+    color: #454056;
+    font-size: small;
+
+    p {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      a {
+        color: $secondColor;
+        font-size: small;
+        display: flex;
+        justify-content: center;
+
+        &:hover {
+          color: $mainColor;
+        }
+
+        img {
+          height: 20px;
+          width: 100%;
+          object-fit: contain;
+          margin: 0px 5px;
+        }
+      }
+    }
+  }
+
+  .apps {
+    background-color: #1f1b2d;
+    border-radius: 16px;
+    width: 100%;
+    padding: 20px;
+    padding-bottom: 0;
+    margin-top: 50px;
+    display: flex;
+    align-items: flex-end;
+
+    .mobile {
+      margin-top: -80px;
+      width: 200px;
+    }
+    .downloadLinks {
+      padding-right: 20px;
+      padding-bottom: 10px;
+      h5 {
+        margin-bottom: 10px;
+        color: #fff;
+      }
+      p {
+        font-size: 12px;
+        color: #e2e2e2;
+      }
+      .download {
+        display: flex;
+        margin-top: 20px;
+        img {
+          background-color: #3f3a4f;
+          padding: 10px;
+          border-radius: 8px;
+          height: 40px;
+          margin: 0 5px;
+        }
+      }
+    }
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+
+      .mobile {
+        margin-bottom: 20px;
+        border-radius: 0 0 10px 10px;
+      }
+      .download {
+        justify-content: center;
+      }
+    }
+  }
+}
+
 // //////////////////////////////////////////==================
 // //////////////////////////////////////////==================
 // //////////////////////////////////////////==================
