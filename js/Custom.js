@@ -14,7 +14,8 @@ $(document).ready(function () {
       $(".navbar").removeClass("navAnimate");
     }
   });
-  var swiper = new Swiper(".offerSlider", {
+  // offerSlider
+  var offerSlider = new Swiper(".offerSlider", {
     slidesPerView: 1,
     spaceBetween: 0,
     loop: true,
@@ -26,7 +27,7 @@ $(document).ready(function () {
       el: ".offerPagination",
       dynamicBullets: true,
     },
-    speed:1500,
+    speed: 1500,
     autoplay: {
       delay: 2500,
       disableOnInteraction: false,
@@ -46,6 +47,32 @@ $(document).ready(function () {
       },
     },
   });
+  // ////////////////// thumbs slider ///////////////////
+
+  // // slider
+  var thumbsSlider = new Swiper(".thumbsSlider", {
+    spaceBetween: 10,
+    slidesPerView: 4,
+    freeMode: true,
+    watchSlidesProgress: true,
+
+  });
+  // // View
+  var thumbsView = new Swiper(".thumbsView", {
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    thumbs: {
+      swiper: thumbsSlider,
+    },
+  });
+
+  // ////////////////// thumbs slider ///////////////////
 });
 // ////////////////////////////////////////
 // ////////////////////////////////////////
@@ -70,18 +97,22 @@ $(document).ready(function () {
     minimumResultsForSearch: -1,
   });
   // img gallery
-  $("[data-fancybox]").fancybox({
-    buttons: [
-      "zoom",
-      // "share",
-      // "slideShow",
-      "fullScreen",
-      // "download",
-      "thumbs",
-      "close",
-    ],
-    transitionEffect: "slide",
+  // $("[data-fancybox]").fancybox({
+  //   buttons: [
+  //     "zoom",
+  //     // "share",
+  //     // "slideShow",
+  //     "fullScreen",
+  //     // "download",
+  //     "thumbs",
+  //     "close",
+  //   ],
+  //   transitionEffect: "slide",
+  // });
+
+  Fancybox.bind("[data-fancybox]", {
   });
+
   // odometer
   $(".odometer").appear(function (e) {
     var odo = $(".odometer");
