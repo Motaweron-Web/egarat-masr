@@ -678,7 +678,8 @@ span.select2.select2-container.select2-container--default {
   }
 }
 .bestOffers,
-.destinations {
+.destinations,
+.mostRecent {
   padding: 70px 0;
 }
 .destinations {
@@ -950,14 +951,12 @@ span.select2.select2-container.select2-container--default {
   }
 }
 
-
 .steps {
   padding: 70px 0;
   .allSteps {
     display: flex;
     padding: 40px 20px;
     // border-radius: 16px;
-    // background-color: #f9f3ee;
     text-align: center;
     position: relative;
     @media (max-width: 678px) {
@@ -982,7 +981,7 @@ span.select2.select2-container.select2-container--default {
       position: relative;
       height: 200px;
       width: 100%;
-      
+
       padding-bottom: 30px;
       @media (max-width: 678px) {
         height: auto;
@@ -1080,6 +1079,23 @@ span.select2.select2-container.select2-container--default {
       }
     }
   }
+}
+.showAll{
+  text-align: center;
+  padding-top: 30px;
+  a{
+    color: $mainColor;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:hover{
+      color: $secondColor;
+    }
+  }
+}
+.mostRecent{
+      background-image: linear-gradient( #ffffff 60%, #f9f3ee);
+
 }
 // //////////////////////////////////////////==================
 // //////////////////////////////////////////==================
